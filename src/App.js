@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import axios from 'axios'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.css'
+import SocialFollow from "./SocialFollow"
+
+class App extends React.Component {
+    state = { advice: '' }
+
+    componentDidMount() {        
+        this.fetchAdvice()
+    }
+
+    fetchAdvice = () => {
+        axios.get('https://api.adviceslip.com/advice')
+        .then((response) => {
+            const {advice} = response.data.slip ;
+            this.setState({ advice: advice});
+        })
+        .catch((error) => {
+            console.log(error); 
+        });
+    }
+
+    render() {
+        const { advice } = this.state ;
+        return (
+            <div>
+            <div className="app">
+            <h1>WELCOME TO SSD</h1>
+            <div className="card">
+              <h2>{advice}</h2>
+              <button className="buton" onClick={this.fetchAdvice}>
+                <span><h4>Unlock today's wisdom</h4></span>
+              </button>
+            </div>
+          </div>
+          <footer>
+          <SocialFollow />
+          </footer>
+          </div>
+
+        );
+    }
 }
 
-export default App;
+export default App
