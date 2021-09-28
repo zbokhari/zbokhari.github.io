@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/zbokhari.github.io/static/css/main.39c65959.chunk.css",
+    "main.js": "/zbokhari.github.io/static/js/main.bdeafb26.chunk.js",
+    "main.js.map": "/zbokhari.github.io/static/js/main.bdeafb26.chunk.js.map",
+    "runtime-main.js": "/zbokhari.github.io/static/js/runtime-main.91f3fd10.js",
+    "runtime-main.js.map": "/zbokhari.github.io/static/js/runtime-main.91f3fd10.js.map",
+    "static/js/2.0b59358a.chunk.js": "/zbokhari.github.io/static/js/2.0b59358a.chunk.js",
+    "static/js/2.0b59358a.chunk.js.map": "/zbokhari.github.io/static/js/2.0b59358a.chunk.js.map",
+    "index.html": "/zbokhari.github.io/index.html",
+    "static/css/main.39c65959.chunk.css.map": "/zbokhari.github.io/static/css/main.39c65959.chunk.css.map",
+    "static/js/2.0b59358a.chunk.js.LICENSE.txt": "/zbokhari.github.io/static/js/2.0b59358a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.91f3fd10.js",
+    "static/js/2.0b59358a.chunk.js",
+    "static/css/main.39c65959.chunk.css",
+    "static/js/main.bdeafb26.chunk.js"
+  ]
+}
