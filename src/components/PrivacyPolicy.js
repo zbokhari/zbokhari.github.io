@@ -5,12 +5,15 @@ class PrivacyPolicy extends Component {
         return (
             <div>
                 <h1>Privacy Policy</h1>
-                <p> Last updated: June 22, 2020</p>
+                <p>Last updated: September 29, 2021</p>
                 <p> This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
                 <p> We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.</p>
                 <h2><b>Interpretation and Definitions</b></h2>
                 <h3> <b>   Interpretation</b></h3>
-                <p> The words of which the initial letter is capitalized have meanings defined under the following conditions.
+                <p>
+                    The words of which the initial letter is capitalized have meanings defined under the following conditions.
+                </p>
+                <p>
                     The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
                 </p>
                 <h3> <b>Definitions</b></h3>

@@ -9,6 +9,7 @@ import Contact from './components/Contact'
 import Capabilities from './components/Capabilities'
 import Team from './components/Team'
 import PrivacyPolicy from './components/PrivacyPolicy'
+import ToS from './components/ToS'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -22,9 +23,7 @@ ReactDOM.render(
         <Route path="/contact" component={Contact} />
         <Route path="/team" component={Team} />
         <Route path="/privacypolicy" component={PrivacyPolicy} />
-
-
-        
+        <Route path="/termsofservice" component={ToS} />      
       </Switch>
       <Footer />
     </Router>
