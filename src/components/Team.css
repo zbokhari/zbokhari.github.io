@@ -1,0 +1,47 @@
+.team-container{
+    /* display: flex; */
+    padding:5%;
+    height:100%;
+  }
+
+  .team-cards{
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    padding:5%;
+    /* align-items: center; */
+    height:auto;
+    justify-content: center ;
+
+  }
+
+
+  .team-card {
+    border-radius: 25px;
+      display:flex;
+      justify-content: center ;
+
+    background: #c1ff18;
+    /* width: auto; */
+    /* height: auto; */
+    padding: 1%;
+  }
+
+  .teamImage{
+    border-radius: 50%;
+    height:10em;
+    width:8em;
+
+  }
+  .batchOne{
+      width:50%;
+  }
+  .batchOne p{
+    height:4em;
+}
+  .batchTwo{
+    width:50%;
+}
+.batchTwo p{
+    height:4em;
+}

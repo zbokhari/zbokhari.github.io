@@ -3,10 +3,11 @@ import { Navbar, Nav } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SocialFollow from "./SocialFollow"
+import './Footer.css'
 
-const Header = () => {
+const Footer = () => {
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar className="bottom-nav" bg="light" expand="lg">
 
 
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -26,4 +27,4 @@ const Header = () => {
     )
 }
 
-export default Header;
+export default Footer;

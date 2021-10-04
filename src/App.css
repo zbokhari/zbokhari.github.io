@@ -1,7 +1,32 @@
-/* .App {
-  text-align: center;
+.container{
+  height:auto;
 }
 
+
+
+.cards {
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  /* text-align: center; */
+}
+.card {
+  flex-shrink:10;
+  background: #3e7d75;
+  width: auto;
+  height: auto;
+  padding: 5%;
+  box-shadow: 10px 10px;
+}
+.splashImage{
+  height:30em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+/* 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -43,7 +68,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-  color: green;
+  color: rgb(4, 7, 4);
   font: monospace;
 }
 
@@ -62,19 +87,7 @@ h1, h2, h3, h4 {
 
 
 
-.card {
-  background: #eee;
-  width: auto;
-  height: auto;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 25px;
-  padding: 5%;
-  box-shadow: 10px 10px;
-  align-self: start;
-  align-content: auto;
-}
+
 
 .buton {
   position: relative;
@@ -191,5 +204,5 @@ a.social:hover {
   align-items: center;
 }
 .logo{
-  max-height:10em !important
+  max-height:5em !important
 }

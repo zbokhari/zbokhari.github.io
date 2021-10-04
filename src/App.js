@@ -2,12 +2,12 @@ import React from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom';
 import axios from 'axios'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import splashQuote from "./images/splash-page-quote.png"
 
 
 import './App.css'
 // import Navbar from "./Navbar"
 import SocialFollow from "./components/SocialFollow"
-import logo from "./images/SSD-Logo.JPG"
 
 class App extends React.Component {
   state = { advice: '' }
@@ -31,17 +31,18 @@ class App extends React.Component {
     const { advice } = this.state;
     return (
       <div className="container">
-        <div className="app">
-          {/* <header class="site-header">
-              <h1>Silver Story Development LLC</h1>
-            <img className="logo" src={logo} alt="" />
-              </header> */}
-          {/* <Navbar /> */}
+        <div className="cards">
+
           <div className="card">
-            <h2>{advice}</h2>
-            <button className="buton" onClick={this.fetchAdvice}>
-              <span><h4>Unlock today's wisdom</h4></span>
-            </button>
+            <h6>Client-Side | Server-Side | Middleware | Full Stack Solutions</h6>
+
+            <h3>Mission</h3>
+            <h6>With minds from the worlds of business, medicine, energy, software, hardware, and angel investing, our team of more than 20 coders empowers our clients, partners, and customers with an innovative approach to design and development bolstered by a combined expertise in a variety of fields</h6>
+            <br />
+            <br />
+            <br />
+            <img src={splashQuote} className="splashImage" alt="" />
+
           </div>
         </div>
       </div>
