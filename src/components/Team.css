@@ -1,47 +1,73 @@
-.team-container{
-    /* display: flex; */
-    padding:5%;
-    height:100%;
-  }
-
-  .team-cards{
-    display: flex;
-    /* flex-direction: column; */
-    flex-wrap: wrap;
-    padding:5%;
-    /* align-items: center; */
-    height:auto;
-    justify-content: center ;
-
-  }
-
-
-  .team-card {
-    border-radius: 25px;
-      display:flex;
-      justify-content: center ;
-
-    background: #c1ff18;
-    /* width: auto; */
-    /* height: auto; */
-    padding: 1%;
-  }
-
-  .teamImage{
-    border-radius: 50%;
-    height:10em;
-    width:8em;
-
-  }
-  .batchOne{
-      width:50%;
-  }
-  .batchOne p{
-    height:4em;
+.team-container {
+  height: 100%;
 }
-  .batchTwo{
-    width:50%;
+
+.team-cards {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
 }
-.batchTwo p{
-    height:4em;
+.team-card {
+  border-radius: 25px;
+  display: flex;
+  background: #18f7ff;
+  width: 100%;
+  /* height: auto; */
+  padding: 1%;
+  margin-bottom: 1em;
+  margin-left: 30em;
+  margin-right: 30em;
+  /* justify-content: center;  */
+  /* align-items: center; */
+  vertical-align:middle;
+}
+.batchOne a.linkedin{
+  min-height: 1em;
+  margin-left: 1em;
+}
+.batchOne a.facebook{
+  min-height: 1em;
+  margin-left: 1em;
+}
+.batchTwo a.linkedin{
+  min-height: 1em;
+  margin-left:15em;
+  margin-right: 1em;
+}
+.batchTwo a.github{
+  min-height: 1em;
+  margin-left:9em;
+  margin-right:-14em;
+}
+.teamImage {
+  border-radius: 50%;
+  height: 10em;
+  width: 8em;
+
+}
+
+.batchOne {
+  width: 50%;
+}
+.batchOne h6 {
+  min-height: 1em;
+  text-align: center;
+}
+
+
+.batchTwo h6 {
+  min-height: 1em;
+  text-align: center;
+}
+
+.batchOne p {
+  height: 5em;
+}
+
+.batchTwo {
+  width: 50%;
+}
+
+.batchTwo p {
+  height: 5em;
 }

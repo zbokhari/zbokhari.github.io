@@ -1,37 +1,20 @@
-import React, { useState } from 'react'
+import React, { Component } from 'react';
+import item from ".././images/quote_contact_page.png"
 
-const Contact = () => {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
-    const [emailSent, setEmailSent] = useState(false);
-    const submit = () => {
-        if (name && email && message) {
-            // TODO - send mail
 
-            setName('');
-            setEmail('');
-            setMessage('');
-            setEmailSent(true);
-        } else {
-            alert('Please fill in all fields.');
-        }
+class Contact extends Component {
+    render() {
+        return (
+            <div>
+                <h1><b>Contact Us</b></h1>
+                <img src={item} alt="" />
+                <p>If you have any questions about this Privacy Policy, You can contact us:</p>
+                <ul><li>By email: info@ssdevelopment.us</li></ul>
+            </div>
+        );
     }
-    const isValidEmail = email => {
-        const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return regex.test(String(email).toLowerCase());
-    };
-
-    return (
-        <div id="contact-form">
-            <input type="text" placeholder="Your Name" value={name} onChange={e => setName(e.target.value)} />
-            <input type="email" placeholder="Your email address" value={email} onChange={e => setEmail(e.target.value)} />
-            <textarea placeholder="Your message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
-            <button onClick={submit}>Send Message</button>
-            <span className={emailSent ? 'visible' : null}>Thank you for your message, we will be in touch in no time!</span>
-        </div>
-    );
-};
+}
 
 export default Contact;
+
 
